@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form HTML</title>
+		<meta name="author" content="Fazar adi putra">
+	</head>
+	<style>
+	fieldset {display:inline}
+	</style>
+	<body>
+		
+
+		<form>
+			<fieldset>
+				<legend>Data Pribadi</legend>
+				<table>
+					<tr>
+						<td valign="top">
+							<label for="nim">NIM: </label>
+						</td>
+						<td>
+							<input type="number" name="nim" id="nim" placeholder="Input NIM anda"required autofocus><br><br>
+						</td>
+					</tr>
+					<tr>
+						<td valign="top">
+							<label for="nama">Nama</label>
+						</td>
+						<td>
+							<input type="text" name="nama" id="nama" required><br><br>
+						</td>
+					</tr>
+					<tr>
+						<td valign="top">
+							<label for="email">Email: </label>
+						</td>
+						<td>
+							<input type="email" name="email" id="email" required><br><br>
+						</td>
+					</tr>
+					<tr>
+						<td valign="top">
+							<label for="password">Password: </label>
+						</td>
+						<td>
+							<input type="password" name="password" id="password" required><br><br>
+						</td>
+					</tr>
+					<tr>
+						<td valign="top">
+							<label for="date">Tanggal Lahir: </label>
+						</td>
+						<td>
+							<input type="date" name="date" id="date" required><br><br>
+						</td>
+					</tr>
+					<tr>
+						<td valign="top">
+							<label for="jk">Jenis Kelamin: </label>
+						</td>
+						<td>
+							<input type="radio" name="gender" value="Laki-Laki" id="lk" required><label for="lk">Laki-laki</label><br><br>
+							<input type="radio" name="gender" value="perempuan" id="pr" required><label for="pr">Perempuan</label><br><br>
+						</td>
+					</tr>
+					<tr>
+						<td valign="top">
+							<label for="hobi">Hobi: </label>
+						</td>
+						<td>
+							<input type="checkbox" name="hobi" value="Membaca" id="read" required><label for="read">Membaca</label><br><br>
+							<input type="checkbox" name="hobi" value="Bernyayi" id="sing"  required><label for="sing">Bernyayi</label><br><br>
+							<input type="checkbox" name="hobi" value="Olahraga" id="or"  required><label for="or">Olahraga</label><br><br>
+						</td>
+					</tr>
+					<tr>
+						<td valign="top">
+							<label for="jurusan">Jurusan: </label>
+						</td>
+						<td>
+							<select name="jurusan" id="jurusan">
+								<option value="">Pilih Jurusan</option>
+								<option value="TI">Teknologi Informasi</option>
+								<option value="TE">Teknik Elektro</option>
+								<option value="TM">Teknik Mesin</option>
+								<option value="TS">Teknik Sipil</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td valign="top">
+							<label for="alamat">Alamat: </label>
+						</td>
+						<td>
+							<textarea name="alamat" id="alamat" cols="30" rows="10">
+							</textarea>
+						</td>
+					</tr>
+					<tr>
+						<td valign="top">
+							<label for="foto">Upload foto: </label>
+						</td>
+						<td>
+							<input type="file" name="foto" id="foto" accept="image/*"><br><br>
+						</td>
+					</tr>
+					
+					<tr>
+						<td>
+						</td>
+						<td>
+							<input type="submit" name="Simpan">
+							<input type="reset" name="reset">
+						</td>
+					</tr>
+					
+				</table>
+			</fieldset>
+		</form>
+
+	</body>
+</html>

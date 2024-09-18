@@ -1,0 +1,26 @@
+p{
+	text-indent: 50px;
+}
+#paragraf1{
+	color: blue;
+	background-color: tomato;
+}
+p:nth-child(3){
+	background-color: blue;
+}
+p:nth-child(4){
+	background-color: green;
+	
+}
+.rata-tengah{
+	text-align: center;
+}
+h1{
+	color: red;
+	text-decoration: underline overline line-through;
+	text-shadow: 0px 5px;
+	
+}
+body{
+	font-family: monospace;
+}
