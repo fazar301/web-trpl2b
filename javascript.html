@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+		<title>Javascript</title>
+<html>
+	<head>
+		<meta name="author" content="Fazar adi putra">
+	</head>
+	<body>
+		<h1>Belajar Javascript</h1>
+		<h2>Belajar Javascript</h2>
+		<button id="btn-dark">dark mode</button>
+		<button id="btn-light">light mode</button>
+		<a href="" onclick="alert('link ini telah di Klik')">Klik disini</a>
+		<a href="" onmouseover="alert('Mouse over')">Mouse over</a>
+		<script>
+			const a = 100
+			const b = 200
+			console.log(a,b)
+			
+			
+			let nama = "Andi"
+			let kelas = "TRPL-2B"
+			nama = "budi"
+			console.log(nama)
+			
+			
+			const mhss = [{nama : 'andi', nim: 201121},{nama: 'budi', nim: 2048119}]
+			document.write(`<h1>Nama saya adalah ${nama}, saya kelas ${kelas}</h1>`)
+			document.write(`<table border="1" cellpadding="8">
+				<tr>
+					<th>No</th>
+					<th>NIM</th>
+					<th>Nama</th>
+				</tr>
+				${ mhss.map((mhs,i) => `<tr>
+											<td>${i+1}</td>
+											<td>${mhs.nama}</td>
+											<td>${mhs.nim}</td>
+										</tr>`)}					
+			</table>
+			`)
+			
+			const judul = document.querySelector('h1')
+			const pesan = document.querySelector('h2')
+			judul.innerHTML += ', Pertemuan 1'
+			pesan.innerHTML = 'belajar Javascript itu mudah dan menyenangkan bukan?'
+			
+			const body = document.querySelector('body')
+			const btnDark = document.querySelector('#btn-dark')
+			const btnLight = document.querySelector('#btn-light')
+			
+			btnDark.addEventListener('click', ()=> body.style = 'background-color: black; color: white;')
+			btnLight.addEventListener('click', ()=> body.style = 'background-color: white; color: black;')
+			
+		</script>
+	</body>
+</html>
